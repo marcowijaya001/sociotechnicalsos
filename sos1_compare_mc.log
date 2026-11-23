@@ -1,0 +1,48 @@
+Monte Carlo (random sampling): 6 design variables, 8 designs, 1 process(es)
+  evaluation    1/8  final   -2.12,   10.64,    4.16  feasible       0.9 min
+  evaluation    2/8  final  -14.00,    1.49,    3.01  infeasible     1.6 min
+  evaluation    3/8  final   -0.79,    3.89,    3.91  feasible       1.9 min
+  evaluation    4/8  final    4.48,    3.37,    2.93  feasible       2.1 min
+  evaluation    5/8  final   -8.39,   10.05,    4.25  infeasible     2.4 min
+  evaluation    6/8  final    2.40,   11.28,    2.02  feasible       2.6 min
+  evaluation    7/8  final  -10.00,   -2.76,    3.26  infeasible     2.8 min
+  evaluation    8/8  final    0.86,    8.66,    3.14  feasible       3.0 min
+
+Done: 8 SoS1 evaluations in 3.0 min
+5 of 8 evaluated points satisfy all constraints
+Best feasible final reward of each stakeholder (first reached at):
+  Ministry of Finance      4.48   evaluation 4 (point 3)
+  Space agency            11.28   evaluation 6 (point 5)
+  Private company          4.16   evaluation 1 (point 0)
+
+Pareto-optimal designs (5): no other feasible design is better for every stakeholder
+  point   3: final reward Ministry of Finance 4.48, Space agency 3.37, Private company 2.93  | min -8.00, 0.62, 1.68
+             funding #1 = 4; system acquisition = 2.05; technology acquisition = 2.38; service transaction system 1 / Space agency = 0.25; Ministry of Finance / Data Collection / use = 2.46; Private company / High Battery, Operation Satellite #2 / operate 2 = -0.0193
+             games  : 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+             actions: t0 (fund, manufacture, develop 2) | t1 (fund, acquire, operate 1, develop tech) | t2 (use, operate 1, end) | t3 (use, operate 1, stay) | t4 (use, operate 1, stay) | t5 (use, operate 1, stay) | t6 (use, operate 1, stay) | t7 (use, operate 1, stay)
+  point   5: final reward Ministry of Finance 2.40, Space agency 11.28, Private company 2.02  | min -12.00, 2.94, 1.36
+             funding #1 = 6; system acquisition = 1.46; technology acquisition = 2.06; service transaction system 1 / Space agency = 0.75; Ministry of Finance / Data Collection / use = 2.84; Private company / High Battery, Operation Satellite #2 / operate 2 = -0.0827
+             games  : 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+             actions: t0 (fund, manufacture, develop 2) | t1 (fund, acquire, operate 1, develop tech) | t2 (use, operate 1, end) | t3 (use, operate 1, stay) | t4 (use, operate 1, stay) | t5 (use, operate 1, stay) | t6 (use, operate 1, stay) | t7 (use, operate 1, stay)
+  point   7: final reward Ministry of Finance 0.86, Space agency 8.66, Private company 3.14  | min -12.00, 2.40, 1.90
+             funding #1 = 6; system acquisition = 2.04; technology acquisition = 2.6; service transaction system 1 / Space agency = 0.5; Ministry of Finance / Data Collection / use = 2.53; Private company / High Battery, Operation Satellite #2 / operate 2 = -0.247
+             games  : 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+             actions: t0 (fund, manufacture, develop 2) | t1 (fund, acquire, operate 1, develop tech) | t2 (use, operate 1, end) | t3 (use, operate 1, stay) | t4 (use, operate 1, stay) | t5 (use, operate 1, stay) | t6 (use, operate 1, stay) | t7 (use, operate 1, stay)
+  point   2: final reward Ministry of Finance -0.79, Space agency 3.89, Private company 3.91  | min -8.00, 1.49, 0.56
+             funding #1 = 4; system acquisition = 4.15; technology acquisition = 1.26; service transaction system 1 / Space agency = 0.5; Ministry of Finance / Data Collection / use = 1.4; Private company / High Battery, Operation Satellite #2 / operate 2 = -0.597
+             games  : 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+             actions: t0 (fund, manufacture, develop 2) | t1 (fund, acquire, operate 1, develop tech) | t2 (use, operate 1, end) | t3 (use, operate 1, stay) | t4 (use, operate 1, stay) | t5 (use, operate 1, stay) | t6 (use, operate 1, stay) | t7 (use, operate 1, stay)
+  point   0: final reward Ministry of Finance -2.12, Space agency 10.64, Private company 4.16  | min -12.00, 4.14, 0.16
+             funding #1 = 6; system acquisition = 4.8; technology acquisition = 0.86; service transaction system 1 / Space agency = 1; Ministry of Finance / Data Collection / use = 1.94; Private company / High Battery, Operation Satellite #2 / operate 2 = -0.577
+             games  : 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+             actions: t0 (fund, manufacture, develop 2) | t1 (fund, acquire, operate 1, develop tech) | t2 (use, operate 1, end) | t3 (use, operate 1, stay) | t4 (use, operate 1, stay) | t5 (use, operate 1, stay) | t6 (use, operate 1, stay) | t7 (use, operate 1, stay)
+
+Wrote sos1_mc_results.csv
+
+2 distinct best-policy sequences of stage games among 8 evaluated designs:
+    6 designs (5 feasible, 5 Pareto): 0_0_0 -> 2_1_1 -> 3_3_2 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5 -> 4_3_5
+    2 designs (0 feasible, 0 Pareto): 0_0_0 -> 1_1_1 -> 2_2_2 -> 2_2_5 -> 2_2_5 -> 2_2_5 -> 2_2_5 -> 2_2_5 -> 2_2_5
+Wrote sos1_mc_sequences.csv (step-by-step sequences of the Pareto-optimal designs)
+Wrote sos1_mc_pareto.png
+Wrote sos1_mc_best_so_far.png
+  plt.show()
